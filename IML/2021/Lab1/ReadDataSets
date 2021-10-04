@@ -1,4 +1,0 @@
-# Preprocess of data
-from scipy.io import arff
-import pandas as pd
-

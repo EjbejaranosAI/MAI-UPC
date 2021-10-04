@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4956461d-a33b-437a-be14-bd2b2e487870" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Lab1/IntroductionToWeka.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/ReadDataSets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/Support_Work1_2021_session1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/Weka/Class2-DataMiningWithWeka-2013.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/Weka/Class3-DataMiningWithWeka-2013.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/Weka/Class4-DataMiningWithWeka-2013.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/Weka/Class5-DataMiningWithWeka-2013.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/Weka/IntroductionToWeka.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/Work1_IML_2021.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T1_2021.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T2_2021.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/._datasets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._adult.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._audiology.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._autos.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._bal.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._breast-w.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._bupa.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._cmc.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._colic.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._connect-4.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._credit-a.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._glass.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._grid.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._heart-c.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._heart-h.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._heart-statlog.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._hepatitis.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._hypothyroid.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._ionosphere.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._iris.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._kr-vs-kp.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._kropt.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._labor.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._nursery.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._pen-based.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._pima_diabetes.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._primary-tumor.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._satimage.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._segment.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._sonar.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._soybean.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._splice.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._vehicle.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._vote.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._vowel.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._waveform.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._wine.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/__MACOSX/datasets/._zoo.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/adult.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/audiology.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/autos.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/bal.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/breast-w.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/bupa.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/cmc.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/colic.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/connect-4.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/credit-a.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/glass.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/grid.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/heart-c.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/heart-h.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/heart-statlog.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/hepatitis.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/hypothyroid.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/ionosphere.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/iris.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/kr-vs-kp.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/kropt.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/labor.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/nursery.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/pen-based.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/pima_diabetes.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/primary-tumor.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/satimage.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/segment.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/sonar.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/soybean.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/splice.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/vehicle.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/vote.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/vowel.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/waveform.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/wine.arff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datasets/datasets/zoo.arff" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1z2SiM8FBmbwGhC3iVtk6n2SdK6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4956461d-a33b-437a-be14-bd2b2e487870" name="Changes" comment="" />
+      <created>1633344815431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633344815431</updated>
+      <workItem from="1633344816717" duration="225000" />
+      <workItem from="1633345052774" duration="54000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
