@@ -1,0 +1,38 @@
+[System]
+Name='mandami'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=0
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='e'
+Range=[-80 80]
+NumMFs=3
+MF1='mf1':'trimf',[-146.7 -80 -13.33]
+MF2='mf2':'trimf',[-66.67 0 66.67]
+MF3='mf3':'trimf',[13.33 80 146.7]
+
+[Input2]
+Name='input2'
+Range=[-5 5]
+NumMFs=3
+MF1='mf1':'trimf',[-9.167 -5 -0.8333]
+MF2='mf2':'trimf',[-4.167 0 4.167]
+MF3='mf3':'trimf',[0.8333 5 9.167]
+
+[Output1]
+Name='SalidaU'
+Range=[0 1]
+NumMFs=3
+MF1='mf1':'trimf',[-0.416666666666667 0 0.416666666666667]
+MF2='mf2':'trimf',[0.0833333333333333 0.5 0.916666666666667]
+MF3='mf3':'trimf',[0.583333333333333 1 1.41666666666667]
+
+[Rules]
