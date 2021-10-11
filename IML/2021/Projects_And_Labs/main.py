@@ -1,3 +1,6 @@
+
+#Import the libraries to manage the project
+
 import numpy as np
 import pandas as pd
 import sklearn
@@ -5,11 +8,13 @@ from matplotlib import pyplot as plt, gridspec
 from scipy.io import arff
 from sklearn.cluster import OPTICS, cluster_optics_dbscan
 from sklearn.preprocessing import normalize, StandardScaler
-
+#Read the dataset from a relative path
 content = "datasets/datasets/vehicle.arff"
-data = arff.loadarff(content)
+data = arff.loadarff(content) # With this we can work with datasets in format arff
+#Create a new variable to store the names of the headings for each column
 data_names = []
 df = pd.DataFrame()
+#We extract the columns
 for i, row in enumerate(data[0]):
     if i == 0:
         for j in range(len(row)):
@@ -111,3 +116,5 @@ ax4.set_title('DBSCAN Clustering with eps = 2.0')
 
 plt.tight_layout()
 plt.show()
+
+
