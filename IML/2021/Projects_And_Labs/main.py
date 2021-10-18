@@ -9,7 +9,7 @@ from scipy.io import arff
 from sklearn.cluster import OPTICS, cluster_optics_dbscan
 from sklearn.preprocessing import normalize, StandardScaler
 #Read the dataset from a relative path
-content = "datasets/datasets/vehicle.arff"
+content = "datasets/datasets/adult.arff"
 data = arff.loadarff(content) # With this we can work with datasets in format arff
 #Create a new variable to store the names of the headings for each column
 data_names = []
@@ -35,7 +35,10 @@ df_normalized = pd.DataFrame(df_normalized)
 
 df_normalized.columns = df.columns
 print(sklearn.neighbors.VALID_METRICS['kd_tree'])
-optics_model = OPTICS(metric='l2', min_samples=3, algorithm='kd_tree')
+optics_model = OPTICS(metric='minkowski', min_samples=5, algorithm='kd_tree')
+
+
+
 
 optics_model.fit(df_normalized)
 
@@ -49,7 +52,6 @@ labels2 = cluster_optics_dbscan(reachability=optics_model.reachability_,
                                 core_distances=optics_model.core_distances_,
                                 ordering=optics_model.ordering_, eps=2)
 
-# Creating a numpy array with numbers at equal spaces till
 # the specified range
 space = np.arange(len(df_normalized))
 
@@ -118,3 +120,4 @@ plt.tight_layout()
 plt.show()
 
 
+# Creating a numpy array with numbers at equal spaces till
