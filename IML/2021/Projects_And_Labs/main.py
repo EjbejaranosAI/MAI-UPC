@@ -1,4 +1,3 @@
-
 #Import the libraries to manage the project
 
 import numpy as np
@@ -9,49 +8,33 @@ from scipy.io import arff
 from sklearn.cluster import OPTICS, cluster_optics_dbscan
 from sklearn.preprocessing import normalize, StandardScaler
 #Read the dataset from a relative path
-content = "datasets/datasets/adult.arff"
-data = arff.loadarff(content) # With this we can work with datasets in format arff
-#Create a new variable to store the names of the headings for each column
-data_names = []
-df = pd.DataFrame()
-#We extract the columns
-for i, row in enumerate(data[0]):
-    if i == 0:
-        for j in range(len(row)):
-            data_names.append(row.dtype.descr[j][0].lower())
-        df = pd.DataFrame(columns=data_names)
+from arff_parser import arff_to_df_normalized
 
-    df.loc[i] = pd.Series(np.asarray(row).tolist(), index=data_names)
+content = "./datasets/vehicle.arff"
 
-print(df.columns)
-
-df = df.drop(['class'], axis=1)
-scalar = StandardScaler()
-df_scaled = scalar.fit_transform(df)
-
-df_normalized = normalize(df_scaled)
+df_normalized = arff_to_df_normalized(content)
 
 df_normalized = pd.DataFrame(df_normalized)
 
-df_normalized.columns = df.columns
 print(sklearn.neighbors.VALID_METRICS['kd_tree'])
-optics_model = OPTICS(metric='minkowski', min_samples=5, algorithm='kd_tree')
+print(np.shape(df_normalized))
 
 
-
+optics_model = OPTICS(min_samples = 10, xi = 0.05, min_cluster_size = 0.05, eps=0.02)
 
 optics_model.fit(df_normalized)
 
 # Producing the labels according to the DBSCAN technique with eps = 0.5
 labels1 = cluster_optics_dbscan(reachability=optics_model.reachability_,
                                 core_distances=optics_model.core_distances_,
-                                ordering=optics_model.ordering_, eps=0.5)
+                                ordering=optics_model.ordering_, eps=0.3)
 
-# Producing the labels according to the DBSCAN technique with eps = 2.0
+# Producing the labels according to the DBSCAN technique with eps = 0.3
 labels2 = cluster_optics_dbscan(reachability=optics_model.reachability_,
                                 core_distances=optics_model.core_distances_,
-                                ordering=optics_model.ordering_, eps=2)
+                                ordering=optics_model.ordering_, eps=0.5)
 
+# Creating a numpy array with numbers at equal spaces till
 # the specified range
 space = np.arange(len(df_normalized))
 
@@ -61,7 +44,7 @@ reachability = optics_model.reachability_[optics_model.ordering_]
 # Storing the cluster labels of each point
 labels = optics_model.labels_[optics_model.ordering_]
 
-print(labels)
+print(optics_model.labels_)
 
 # Defining the framework of the visualization
 plt.figure(figsize=(10, 7))
@@ -94,6 +77,9 @@ ax2.plot(df_normalized.iloc[optics_model.labels_ == -1, 0],
          'k+', alpha=0.1)
 ax2.set_title('OPTICS Clustering')
 
+print(df_normalized.iloc[optics_model.labels_ == -1, 0])
+print(df_normalized.iloc[optics_model.labels_ == -1, 1])
+
 # Plotting the DBSCAN Clustering with eps = 0.5
 colors = ['c', 'b', 'r', 'y', 'g', 'greenyellow']
 for Class, colour in zip(range(0, 6), colors):
@@ -120,4 +106,3 @@ plt.tight_layout()
 plt.show()
 
 
-# Creating a numpy array with numbers at equal spaces till
