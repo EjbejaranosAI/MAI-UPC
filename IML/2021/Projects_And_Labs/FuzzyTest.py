@@ -1,3 +1,7 @@
+from arff_parser import arff_to_df_normalized
+
+# Import the libraries to manage the project
+
 import numpy as np
 import pandas as pd
 import sklearn
@@ -5,9 +9,22 @@ from matplotlib import pyplot as plt, gridspec
 from scipy.io import arff
 from sklearn.cluster import OPTICS, cluster_optics_dbscan
 from sklearn.preprocessing import normalize, StandardScaler
+from sklearn.cluster import KMeans
+from sklearn.datasets import make_blobs
 from numpy import linalg as LA
 
-#Imputs
+
+content = "./datasets/vehicle.arff"
+
+df_normalized, data_num_names, data_cat_names, data_names, class_names  = arff_to_df_normalized(content)
+
+print(df_normalized.head())
+
+
+'''Imputs'''
+#Data
+X = df = df_normalized.to_numpy()
+
 #c clusters
 c=(3)
 #Maximun number of iterations
@@ -16,7 +33,6 @@ T = (100)
 m=2
 
 
-X = df = np.array([[1,2],[2,2.5],[2,3],[9,4],[10,1],[8,4],[9,1.5]])
 print('Our matrix')
 print(df)
 #n number of instances
@@ -24,9 +40,6 @@ n = (len(df[:,0]))
 #p number of fetures
 p =(len(df[0,:]))
 
-
-
-#
 '''STEP1 : Randomly weight selects'''
 U = np.random.random([c,n])
 # Create a weight matrix with random pesos
@@ -78,14 +91,11 @@ for j in range(n):
 
 
 
-
-
-
-print('HOla soy la matrix de pesos renovada')
+print('Universe matrix- Weights')
 print(U)
-print('HOla soy la crisp')
+print('Crisp matrix')
 print(Crisp)
-print('Hola mundo soy los centroides de sarita: :)')
+print('Centroids matrix: :)')
 print(V)
 
 plt.scatter(X[:,0],X[:,1])

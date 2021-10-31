@@ -27,7 +27,7 @@ print(X.shape)
 
 # Imputs
 # Maximun number of iterations
-T = (100)
+T = (10)
 # Fuzziness degree
 m = 2
 
@@ -40,7 +40,7 @@ print(df)
 n = (X.shape[0])
 # p number of fetures
 p = (X.shape[1])
-
+#Performance
 P = np.zeros([1, n])
 
 '''OPtimal number of clusters'''
@@ -49,7 +49,7 @@ P = np.zeros([1, n])
 def performanceFCM(c, X, V, U, m, n, p):
     P = 0
     x_avg = np.zeros([1, p])
-    for i in range(p):
+    for i in range(5):
         x_avg[0, i] = sum(X[:, i])
     x_avg = 1 / n * x_avg
     for i in range(c):
