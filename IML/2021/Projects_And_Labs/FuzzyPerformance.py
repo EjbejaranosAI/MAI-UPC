@@ -100,6 +100,8 @@ for c in tqdm(c_vec):
 #c_vec = np.array(range(1, n+1))
 plt.suptitle('Performance index for optimal cluster')
 plt.plot(c_vec, P[0, :])
+plt.xlabel("Number of clusters")
+plt.ylabel("Performance")
 plt.show()
 
 index_min = np.argmin(P)

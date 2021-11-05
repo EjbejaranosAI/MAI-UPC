@@ -13,8 +13,12 @@ from sklearn.cluster import KMeans
 from sklearn.datasets import make_blobs
 from numpy import linalg as LA
 
-
-content = "./datasets/vehicle.arff"
+content = "./datasets/cmc.arff"
+df_normalized[list(itemgetter(*data_names_cat)(data_names))] = df_normalized[list(itemgetter(*data_names_cat)(data_names))].astype('category')
+df_normalized[list(itemgetter(*data_names_cat)(data_names))] = df_normalized[list(itemgetter(*data_names_cat)(data_names))].apply(lambda x: x.cat.codes)
+scalar = StandardScaler()
+df_scaled = scalar.fit_transform(df_normalized[list(itemgetter(*data_names_cat)(data_names))])
+df_normalized[list(itemgetter(*data_names_cat)(data_names))] = normalize(df_scaled)
 
 df_normalized, data_num_names, data_cat_names, data_names, class_names  = arff_to_df_normalized(content)
 
@@ -26,7 +30,7 @@ print(df_normalized.head())
 X = df = df_normalized.to_numpy()
 
 #c clusters
-c=(3)
+c=(4)
 #Maximun number of iterations
 T = (100)
 #Fuzziness degree
@@ -106,4 +110,8 @@ for i in range(c):
     plt.scatter(X[Crisp[i,:],0],X[Crisp[i,:],1])
 #Centroides
 plt.scatter(V[:,0],V[:,1])
+plt.xlabel("COMPACTNESS")
+plt.ylabel("CIRCULARITY")
 plt.show()
+
+
